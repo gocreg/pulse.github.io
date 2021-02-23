@@ -1,12 +1,12 @@
 {
-  "name": "igor",
+  "name": "gosha",
   "version": "1.0.0",
   "description": "gulp-petrichenko",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "igor",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",
@@ -16,6 +16,5 @@
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
-  },
-  "dependencies": {}
+  }
 }
