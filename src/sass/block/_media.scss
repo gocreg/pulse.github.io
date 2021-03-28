@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .header__official {
+        display: none;
+    }
+    .promo__header {
+        font-size: 36px;
+    }
+    .header__contacts {
+        margin-left: 10px;
+    }
+    .header__phone {
+        font-size: 17px;
+    }
+    .slider img {
+        width: 100%;
+    }
+}

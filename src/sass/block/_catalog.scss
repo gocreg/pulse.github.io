@@ -1,5 +1,5 @@
 .catalog {
-    padding: 100px 0;
+    padding: 0 0 100px 0;
     &__title {
         font-size: 30px;
         font-weight: 700;
@@ -25,6 +25,7 @@
         margin-bottom: 20px;
         padding: 20px 20px 26px;
         border: 1px solid #eee;
+        margin: 20px auto;
         a {
             text-transform: uppercase;
             margin-top: 18px;
@@ -56,5 +57,8 @@
     }
     &__price_old {
         text-decoration: line-through;
+    }
+    &__price_new {
+        font-weight: bold;
     }
 }

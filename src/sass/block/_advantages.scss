@@ -11,14 +11,16 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 64px;
-
+        flex-wrap: wrap;
     }
 
     &__item {
         width: 235px;
         text-align: center;
+        margin: 10px auto;
+        padding: 5px;
     }
 
     &__subtitle {

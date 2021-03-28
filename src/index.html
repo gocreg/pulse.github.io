@@ -15,7 +15,7 @@
     <div class="promo">
         <div class="container">
             <header class="header">
-                <a href="#" class="header__link">
+                <a href="#" class="header__logo">
                     <img src="icons/running-man-2-64.png" class="header__images" alt="logo">
                 </a>
                 <div class="header__official">
@@ -99,12 +99,12 @@
                 Просто заполните форму заявки <br>
 и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="">
-                <input type="text" name="name" placeholder="Ваше имя" id="placeholder">
-                <input type="text" name="phone" placeholder="Ваш телефон" id="placeholder">
-                <input type="email" name="email" placeholder="Ваш Email" id="placeholder">
+            <form action="#">
+                <input required type="text" name="name" placeholder="Ваше имя" id="placeholder">
+                <input required type="number" name="phone" placeholder="Ваш телефон" id="placeholder">
+                <input required type="email" name="email" placeholder="Ваш E-mail" id="placeholder">
             </form>
-            <button class="button button_main" >Заказать консультацию</button>
+            <button class="button consultation_button" >Заказать консультацию</button>
         </div>
     </section><!-- ./consultation -->
 
@@ -117,9 +117,9 @@
         <div class="container">
             <div class="catalog__title">каталог пульсометров</div>
             <div class="catalog_button-wrap">
-                <button class="button catalog_button">Для фитнеса</button>
-                <button class="button catalog_button">для бега</button>
-                <button class="button catalog_button">для триатлона</button>
+                <button class="button catalog__button catalog__button_active">Для фитнеса</button>
+                <button class="button catalog__button">для бега</button>
+                <button class="button catalog__button">для триатлона</button>
             </div>
             <div class="catalog__items">
                 <div class="catalog__item">
@@ -137,7 +137,7 @@
                             <div class="catalog__price_old">4 700 руб.</div>
                             <div class="catalog__price_new">4 500 руб.</div>
                         </div>
-                        <button class="button price_button">купить</button>
+                        <button class="button price__button">купить</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -155,7 +155,7 @@
                             <div class="catalog__price_old">4 700 руб.</div>
                             <div class="catalog__price_new">4 500 руб.</div>
                         </div>
-                        <button class="button price_button">купить</button>
+                        <button class="button price__button">купить</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -173,7 +173,7 @@
                             <div class="catalog__price_old">4 700 руб.</div>
                             <div class="catalog__price_new">4 500 руб.</div>
                         </div>
-                        <button class="button price_button">купить</button>
+                        <button class="button price__button">купить</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -191,7 +191,7 @@
                             <div class="catalog__price_old">4 700 руб.</div>
                             <div class="catalog__price_new">4 500 руб.</div>
                         </div>
-                        <button class="button price_button">купить</button>
+                        <button class="button price__button">купить</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -209,7 +209,7 @@
                             <div class="catalog__price_old">4 700 руб.</div>
                             <div class="catalog__price_new">4 500 руб.</div>
                         </div>
-                        <button class="button price_button">купить</button>
+                        <button class="button price__button">купить</button>
                     </div>
                 </div>
                 <div class="catalog__item">
@@ -227,7 +227,7 @@
                             <div class="catalog__price_old">4 700 руб.</div>
                             <div class="catalog__price_new">4 500 руб.</div>
                         </div>
-                        <button class="button price_button">купить</button>
+                        <button class="button price__button">купить</button>
                     </div>
                     
                 </div>

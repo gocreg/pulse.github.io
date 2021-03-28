@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__link {
+    &__logo {
         width: 250px;
-        .header__images {
+        img {
             width: 100%;
         }
     }
@@ -23,13 +23,13 @@
     &__phone {
         display: block;
         color: #fff;
-        text-decoration: none;
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 700;
         margin-bottom: 3px;
-        line-height: 1.4;
+        // line-height: 1.4;
         &:hover {
-            color: #fff;
+            color: rgb(19, 68, 230);
+            text-decoration: none;
         }
     }
     &__contacts {
