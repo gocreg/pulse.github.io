@@ -8,6 +8,7 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -99,18 +100,30 @@
                 Просто заполните форму заявки <br>
 и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#">
+            <form class="feed-form" action="#">
                 <input required type="text" name="name" placeholder="Ваше имя" id="placeholder">
                 <input required type="number" name="phone" placeholder="Ваш телефон" id="placeholder">
                 <input required type="email" name="email" placeholder="Ваш E-mail" id="placeholder">
+                <button class="button button_submit" >Заказать консультацию</button>
             </form>
-            <button class="button consultation_button" >Заказать консультацию</button>
         </div>
     </section><!-- ./consultation -->
 
-    <section class="slider">
-        <img src="img/clock.png" alt="">
-    </section><!-- ./sllider -->
+    <section class="corousel">
+        <div class="container">
+            <div class="corousel__inner">
+                <div>
+                    <img src="img/clock.png" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="img/polar-m400-triple.png" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="img/polar-m600-trio.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section><!-- ./corousel -->
     
 
     <section class="catalog">
@@ -234,6 +247,10 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
