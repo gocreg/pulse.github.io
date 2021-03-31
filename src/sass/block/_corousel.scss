@@ -2,7 +2,7 @@
     padding: 100px 0;
     min-height: 527px;
     &__inner {
-        // position: relative;
+        position: relative;
         width: 750px;
         margin: 0 auto;
         display: block;
@@ -10,7 +10,7 @@
     .slick-prev, .slick-next {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(calc(-50% - 78px));
         left: -66px;
         border: none;
         background: #fff;
@@ -22,5 +22,8 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    ul.slick-dots {
+        display: block;
     }
 }
