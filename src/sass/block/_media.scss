@@ -51,6 +51,21 @@
             font-size: 14px;
         }
     }
+    div.footer__info {
+        width: 400px;
+        min-height: 220px;
+        background-color: $main-color;
+        padding: 40px 48px 30px;
+        text-align: center;
+    }
+    address.footer__addr {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    a.footer__phone {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -60,7 +75,7 @@
     .reviews__items {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         img {
             margin-bottom: 30px;
         }
