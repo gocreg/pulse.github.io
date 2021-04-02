@@ -1,0 +1,39 @@
+.reviews {
+    padding: 50px 0;
+    &__title {
+        font-size: 30px;
+        color: #0d0d0d;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 70px 20px 0;
+        img {
+            max-width: 100%;
+            display: block;
+            margin-right: 60px;
+        }
+    }
+    &__item_descr {
+        h6 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        span {
+            font-size: 14px;
+            color: #646464;
+            font-weight: 300;
+            display: block;
+            opacity: .7;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            color: #0d0d0d;
+        }
+    }
+}

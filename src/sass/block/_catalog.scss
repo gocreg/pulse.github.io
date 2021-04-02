@@ -1,70 +1,5 @@
-// .catalog {
-//     padding: 0 0 100px 0;
-//     &__title {
-//         font-size: 30px;
-//         font-weight: 700;
-//         text-transform: uppercase;
-//         text-align: center;
-//         margin-bottom: 68px;
-//     }
-//     &_button-wrap {
-//         text-align: center;
-//         margin-bottom: 60px;
-//     }
-//     &__button {
-//         // padding: 17px 46px;
-//     }
-//     &__items {
-//         display: flex;
-//         justify-content: space-between;
-//         flex-wrap: wrap;
-//     }
-//     &__item {
-//         width: 300px;
-//         text-align: center;
-//         margin-bottom: 20px;
-//         padding: 20px 20px 26px;
-//         border: 1px solid #eee;
-//         margin: 20px auto;
-//         a {
-//             text-transform: uppercase;
-//             margin-top: 18px;
-//             display: block;
-//             color: $main-color;
-//             font-size: 14px;
-//             font-weight: 600;
-//             text-decoration: none;
-//             border-bottom: 1px solid $main-color;
-//             width: 86px;
-//             margin: 18px auto 20px;
-//         }
-//     }
-//     &__item_header {
-//         font-size: 16px;
-//         font-weight: 700;
-//         margin-top: 21px;
-//     }
-//     &__item_subheader {
-//         font-size: 14px;
-//         font-weight: 300;
-//         margin-top: 16px;
-//     }
-//     &__price_wrap {
-//         display: flex;
-//         justify-content: space-between;
-//         padding: 4px;
-        
-//     }
-//     &__price_old {
-//         text-decoration: line-through;
-//     }
-//     &__price_new {
-//         font-weight: bold;
-//     }
-// }
-
 .catalog {
-    padding: 0 0 100px 0;
+    padding: 0;
     &__title {
         font-size: 30px;
         font-weight: 700;
@@ -109,7 +44,7 @@
     }
     &__content {
         display: none;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 58px;
         &_active {
