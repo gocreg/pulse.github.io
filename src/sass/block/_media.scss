@@ -80,11 +80,33 @@
             margin-bottom: 30px;
         }
     }
-        
+            
     
 }
 
 @media (max-width: 468px) {
+    div.modal {
+        width: 260px;
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+    .feed-form {
+        width: 180px;
+        input {
+            height: 40px;
+            padding: 0 10px;
+            font-size: 12px;
+            width: 100%;
+        }
+        .button_mini {
+            font-size: 10px;
+            width: 100%;
+        }
+    }
     .promo {
         padding: 45px 13px;
     }
