@@ -1,12 +1,13 @@
 @media (max-width: 991px) {
     .reviews {
         &__title {
-            
+
             color: #0d0d0d;
             text-transform: uppercase;
             font-weight: 700;
             text-align: center;
         }
+
         &__items {
             img {
                 max-width: 100%;
@@ -21,36 +22,45 @@
     .header__official {
         display: none;
     }
+
     .promo__header {
         font-size: 36px;
     }
+
     .header__contacts {
         margin-left: 10px;
     }
+
     .header__phone {
         font-size: 17px;
     }
+
     .corousel {
-        padding-bottom: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        div {
-            img.corousel__img {
-                max-width: 60%;
-                display: block;
-                margin-left: 20%;
-            }
-        }
+        padding-bottom: 50px;
     }
+
+    .slick-slide img {
+        display: block;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
     .catalog {
         &__title {
             font-size: 24px;
         }
+
         &__tab {
             font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 32px;
         }
     }
+
     div.footer__info {
         width: 400px;
         min-height: 220px;
@@ -58,10 +68,12 @@
         padding: 40px 48px 30px;
         text-align: center;
     }
+
     address.footer__addr {
         font-size: 16px;
         margin-bottom: 20px;
     }
+
     a.footer__phone {
         font-size: 16px;
         margin-bottom: 20px;
@@ -70,43 +82,27 @@
 
 @media (max-width: 575px) {
     h2.reviews__title {
-        font-size: 24px;        
+        font-size: 24px;
     }
+
     .reviews__items {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         img {
             margin-bottom: 30px;
         }
     }
-            
-    
+
+    .slick-slide img {
+        display: block;
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 468px) {
-    div.modal {
-        width: 260px;
-        &__subtitle {
-            font-size: 14px;
-        }
-        &__descr {
-            font-size: 12px;
-        }
-    }
-    .feed-form {
-        width: 180px;
-        input {
-            height: 40px;
-            padding: 0 10px;
-            font-size: 12px;
-            width: 100%;
-        }
-        .button_mini {
-            font-size: 10px;
-            width: 100%;
-        }
-    }
     .promo {
         padding: 45px 13px;
     }
@@ -114,11 +110,13 @@
     .header {
         display: flex;
         flex-direction: column;
+
         &__official {
             display: block;
             margin-top: 20px;
             text-align: center;
         }
+
         &__contacts {
             margin-top: 20px;
             text-align: center;
@@ -130,13 +128,16 @@
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
+
         h1 {
             font-size: 22px;
             text-align: center;
         }
+
         h2 {
-            font-size: 16px;
+            font-size: 15px;
             text-align: center;
+            line-height: 25px;
         }
     }
 
@@ -146,57 +147,104 @@
         &__title {
             font-size: 18px;
         }
+
         &__items {
             margin-top: 20px;
         }
     }
 
     .consultation {
-        padding: 50px 15px 50px;
-        min-height: 0;
+        div.container {
+            margin: 0;
+            padding: 0;
+        }
+
+        padding: 50px 0 50px 15px;
+        min-height: 1px;
+
         &__title {
             font-size: 18px;
         }
+
         &__subtitle {
             font-size: 14px;
             font-weight: 500;
             margin-top: 17px;
         }
+
         form {
             width: 287px;
+
             input {
                 height: 40px;
+                width: 100%;
             }
+
             .button_submit {
                 height: 45px;
+                width: 100%;
             }
         }
     }
 
-    .corousel {
-        min-height: 1px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        div {
-            img.corousel__img {
-                max-width: 40%;
-                display: block;
-                margin-left: 30%;
-            }
-        }
-    }
-    
     .catalog {
         &__title {
             font-size: 20px;
         }
+
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
         &__tab {
             font-size: 10px;
+            margin-top: 0px;
         }
     }
 
     h2.reviews__title {
-        font-size: 20px;        
+        font-size: 20px;
     }
-    
+
+    div.modal {
+        width: 260px;
+        padding: 20px;
+        min-height: 1px;
+
+        &__subtitle {
+            font-size: 14px;
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+
+        &__close {
+            right: 6px;
+            top: 6px;
+        }
+
+        form.feed-form {
+            width: 100%;
+
+            input {
+                margin-right: 0;
+                height: 40px;
+                padding: 0 10px;
+                font-size: 12px;
+                width: 100%;
+            }
+
+            .button_mini {
+                font-size: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    div.footer__info {
+        width: 100%;
+        padding: 30px 0 0;
+    }
 }
