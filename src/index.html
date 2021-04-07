@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -59,7 +60,7 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="advantages__title">Нащи преимущества</div>
+            <h2 class="advantages__title">Нащи преимущества</h2>
             <div class="advantages__items">
                 <div class="advantages__item">
                     <img src="icons/cup.png" alt="cup">
@@ -70,7 +71,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart.png" alt="">
+                    <img src="icons/heart.png" alt="heart" class="advantages__icon_animated">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">
                         Мы работаем для того, 
@@ -94,9 +95,9 @@
 
     <section class="consultation" >
         <div class="container">
-            <div class="consultation__title">
+            <h2 class="consultation__title">
                 Получите бесплатную консультацию по подбору пульсометра
-            </div>
+            </h2>
             <div class="consultation__subtitle">
                 Просто заполните форму заявки <br>
 и мы перезвоним вам в течении 10 минут
@@ -110,7 +111,7 @@
         </div>
     </section><!-- ./consultation -->
 
-    <section class="corousel">
+    <div class="corousel">
         <div class="container">
             <div class="corousel__inner">
                 <div>
@@ -124,7 +125,7 @@
                 </div>
             </div>
         </div>
-    </section><!-- ./corousel -->
+    </div><!-- ./corousel -->
     
     <section class="catalog">
         <div class="container">
@@ -137,26 +138,28 @@
             <div class="catalog__content catalog__content_active">
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT11
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -165,9 +168,10 @@
                         <button class="button price__button">купить</button>
                     </div>
                 </div>
+
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Suunto M1
@@ -177,16 +181,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -195,9 +201,10 @@
                         <button class="button price__button">купить</button>
                     </div>
                 </div>
+
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Polar FT2
@@ -207,16 +214,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -225,9 +234,10 @@
                         <button class="button price__button">купить</button>
                     </div>
                 </div>
+
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Suunto M2
@@ -237,16 +247,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -255,9 +267,10 @@
                         <button class="button price__button">купить</button>
                     </div>
                 </div>
+
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Polar FT3
@@ -267,16 +280,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -285,9 +300,10 @@
                         <button class="button price__button">купить</button>
                     </div>
                 </div>
+
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Suunto M3
@@ -297,16 +313,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -316,10 +334,11 @@
                     </div>
                 </div>
             </div>
+
             <div class="catalog__content">
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Polar FT4
@@ -329,16 +348,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -347,9 +368,10 @@
                         <button class="button price__button">купить</button>
                     </div>
                 </div>
+
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s">
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Suunto M4
@@ -359,16 +381,17 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -378,10 +401,11 @@
                     </div>
                 </div>
             </div>
+
             <div class="catalog__content">
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
+                        <div class="catalog-item__content catalog-item__content_active animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".5s" >
                             <img src="img/pulsemetr.png" class="catalog-item__img" alt="">
                             <div class="catalog-item__subtitle">
                                 Пульсометр Polar FT5
@@ -391,16 +415,18 @@
                             </div>
                             <div><a href="#" class="catalog-item__link">подробнее</a></div>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
-
                     <div class="catalog-item__footer">
                         <div class="catalog-item__price">
                             <div class="catalog-item__price_old">4 700 руб.</div>
@@ -415,9 +441,9 @@
     
     <section class="reviews">
         <div class="container">
-            <h2 class="reviews__title">отзывы клиентов</h2>
+            <h2 class="reviews__title animate__animated animate__backInRight wow" data-wow-duration="1s" data-wow-delay="1s">отзывы клиентов</h2>
             <div class="reviews__content">
-                <div class="reviews__items">
+                <div class="reviews__items animate__animated animate__backInRight wow" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="img/reviews1.png" class="reviews__item_img" alt="reviews">
                     <div class="reviews__item_descr">
                         <h6>Ирина Иванченко</h6>
@@ -429,7 +455,7 @@
                     </div>
                 </div>
 
-                <div class="reviews__items">
+                <div class="reviews__items animate__animated animate__backInRight wow" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="img/reviews2.png" class="reviews__item_img" alt="reviews">
                     <div class="reviews__item_descr">
                         <h6>Иван Сёмочкин  </h6>
@@ -441,7 +467,7 @@
                     </div>
                 </div>
 
-                <div class="reviews__items">
+                <div class="reviews__items animate__animated animate__backInRight wow" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="img/reviews3.png" class="reviews__item_img" alt="reviews">
                     <div class="reviews__item_descr">
                         <h6>Юлия Дашкина</h6>
@@ -455,9 +481,9 @@
         </div>
     </section><!-- ./reviews -->
 
-    <footer class=footer">
+    <footer class="footer">
         <div class="footer__wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430307459425!2d37.644807316398506!3d55.768397998255864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1617324043246!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430307459425!2d37.644807316398506!3d55.768397998255864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1617324043246!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
             <div class="footer__info">
                 <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
                 <a class="footer__phone" href="tel:84999228974" >8 (499) 922-89-74</a>
@@ -468,7 +494,7 @@
                 </div>
             </div>
         </div>
-    </footer><!--./footer -->
+    </footer>
 
     <div class="overlay">
         <div class="modal" id="consultation">
@@ -510,11 +536,12 @@
         <img src="icons/up.svg" alt="up">
     </a>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -40,4 +40,7 @@
             text-transform: uppercase;
         }
     }
+    &__icon_animated {
+        animation: heartbeat 2s ease-in 7 normal none;
+    }
 }
