@@ -26,9 +26,9 @@ $(document).ready(function () {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
                 $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-            })
+            });
         });
-    };
+    }
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
@@ -89,13 +89,13 @@ $(document).ready(function () {
 
     $('input[name=phone').mask("+7 (999) 999-99-99");
 
-    $('form').submit(function(e) {
+    $('form').submit(function (e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
             data: $(this).serialize()
-        }).done(function() {
+        }).done(function () {
             $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
@@ -103,4 +103,19 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn('slow');
+        } else
+            $('.pageup').fadeOut('slow');
+    });
+
+    // $("a[href^='#']").click(function () { // и так плавно скролит
+    //     const _href = $(this).attr("href");
+    //     $("html, body").animate({
+    //         scrollTop: $(_href).offset().top + "px"
+    //     });
+    //     return false;
+    // });
 });
