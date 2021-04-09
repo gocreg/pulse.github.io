@@ -111,13 +111,13 @@ $(document).ready(function () {
             $('.pageup').fadeOut('slow');
     });
 
-    // $("a[href^='#']").click(function () { // и так плавно скролит
-    //     const _href = $(this).attr("href");
-    //     $("html, body").animate({
-    //         scrollTop: $(_href).offset().top + "px"
-    //     });
-    //     return false;
-    // });
+    $("a[href^='#']").click(function () { // и так плавно скролит
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
 
     new WOW().init();
 });

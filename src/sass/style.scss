@@ -12,10 +12,12 @@ a {
     text-decoration: none;
 }
 .container {
-    max-width: 950px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0;
 }
+
+
 @import 'block/promo';
 @import 'block/header';
 @import 'block/buttons';
