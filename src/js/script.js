@@ -111,7 +111,7 @@ $(document).ready(function () {
             $('.pageup').fadeOut('slow');
     });
 
-    $("a[href^='#']").click(function () { // и так плавно скролит
+    $("a[href^='#']").click(function () {
         const _href = $(this).attr("href");
         $("html, body").animate({
             scrollTop: $(_href).offset().top + "px"
